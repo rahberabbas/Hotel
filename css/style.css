@@ -133,6 +133,216 @@ section {
     margin: 0.67em 0;
 }
 
+/* About */
+
+#about-hero{
+    padding: 5vh 3vh;
+}
+
+#about-hero .row h1 {
+    white-space: pre-wrap;
+    font-size: 26px;
+    font-family: "Phudu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#about-hero .lead{
+    text-align: center;
+    word-wrap: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+}
+
+#about-hero .service-items ul{
+    text-transform: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#about-hero .service-items ul li{
+    text-decoration: none;
+    display: list-item; 
+}
+
+#about-hero .row p{
+    font-family: "open sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+} 
+
+/* amenities */
+
+#amenities-hero .row{
+    padding: 5vh 3vh;
+}
+
+#amenities-hero .row h1{
+    font-family: arno-pro;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 11.5px;
+    line-height: 2.1em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #222;
+    padding-top: 17px;
+}
+
+#amenities-hero .row p{
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+}
+
+/* Book */
+
+#book-hero{
+    padding: 5vh 3vh;
+}
+
+#book-hero .row h1 {
+    white-space: pre-wrap;
+    font-size: 26px;
+    font-family: "Phudu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#book-hero .lead{
+    text-align: center;
+    word-wrap: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+}
+
+#book-hero .service-items ul{
+    text-transform: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#book-hero .service-items ul li{
+    text-decoration: none;
+    display: list-item; 
+}
+
+#book-hero .row p{
+    font-family: "open sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+} 
+
+#book-hero .book-button{
+    display: flex;
+    justify-content: center;
+}
+
+#book-hero a{
+    margin-top: 30px;
+}
+
+#book-1{
+    padding: 5vh 3vh;
+}
+
+#book-1 .row h1 {
+    white-space: pre-wrap;
+    font-size: 26px;
+    font-family: "Phudu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#book-1 .lead{
+    text-align: center;
+    word-wrap: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+}
+
+#book-1 .service-items ul{
+    text-transform: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#book-1 .service-items ul li{
+    text-decoration: none;
+    display: list-item; 
+}
+
+#book-1 .row p{
+    font-family: "open sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+} 
+
 footer{
     background-color: var(--pale);
 }
