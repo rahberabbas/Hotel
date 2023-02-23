@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "open sas", sans-serif;
+}
+
+:root {
+    --blue: #192436;
+    --pale: #615F5C;
+    --white: #E9E8E9;
+}
+
+section {
+    padding: 3vh 3vh;
+}
+
+.top-bar {
+    padding: 0px;
+    color: #fff;
+    background-color: #000;
+}
+
+.top-bar span{
+    font-family: "Phudu", sans-serif;
+}
+
+.navbar_wrapper nav{
+    padding: 10px 20px;
+}
+
+.logo-image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 112px;
+}
+
+.navbar_wrapper nav .nav-item .nav-link{
+    font-family: "Ubuntu", sans-serif;
+}
+
+#hero{
+    margin-bottom: 10vw;
+}
+
+#hero .page-description p{
+    font-family: Arial,sans-serif;
+    line-height: 1.2em;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
+    letter-spacing: .1em;
+    line-height: 2.9em;
+    text-transform: none;
+    color: #fff;
+}
+
+#hero .page-description p span{
+    white-space: pre-wrap;
+}
+
+#services .header h1 {
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 26px;
+    font-family: "Phudu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#services .lead{
+    text-align: center;
+    word-wrap: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+}
+
+#services .service-items ul{
+    text-transform: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#services .service-items ul li{
+    text-decoration: none;
+    display: list-item; 
+}
+
+#services .service-items ul li p{
+    text-align: center;
+    white-space: pre-wrap;
+    font-family: "Phudu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+} 
+
+/* Gallery */
+
+#gallery-hero h1{
+    line-height: 1.4em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #222;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    margin: 0.67em 0;
+}
+
+footer{
+    background-color: var(--pale);
+}
+
+footer a{
+    text-decoration: none;
+    font-family: "open sas", sans-serif;
+}
+
+footer h5{
+    font-family: "Phudu", sans-serif;
+    margin-bottom: 15px;
+}
+
+footer .last{
+    background-color: var(--blue);
+}
