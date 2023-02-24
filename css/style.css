@@ -304,6 +304,17 @@ section {
     margin-bottom: 20px;
 }
 
+#book-1 .row span {
+    font-family: arno-pro;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 11.5px;
+    line-height: 2.1em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #222;
+}
+
 #book-1 .lead{
     text-align: center;
     word-wrap: break-word;
@@ -342,6 +353,35 @@ section {
     text-rendering: optimizeLegibility;
     color: #ababab;
 } 
+
+/* Locations */
+
+#location-hero .row{
+    padding: 5vh 3vh;
+}
+
+#location-hero .row h1{
+    font-family: brandon-grotesque;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.4em;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+    color: #222;
+    padding-top: 17px;
+}
+
+#location-hero .row p{
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.4em;
+    letter-spacing: .065em;
+    text-rendering: optimizeLegibility;
+    color: #ababab;
+}
 
 footer{
     background-color: var(--pale);
