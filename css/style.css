@@ -57,7 +57,7 @@ section {
     letter-spacing: .1em;
     line-height: 2.9em;
     text-transform: none;
-    color: #fff;
+    color: var(--blue);
 }
 
 #hero .page-description p span{
@@ -66,7 +66,6 @@ section {
 
 #services .header h1 {
     text-align: center;
-    white-space: pre-wrap;
     font-size: 26px;
     font-family: "Phudu", sans-serif;
     font-weight: 700;
@@ -74,7 +73,7 @@ section {
     line-height: 1.4em;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
     margin-bottom: 20px;
 }
 
@@ -92,7 +91,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 }
 
 #services .service-items ul{
@@ -116,7 +115,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 } 
 
 /* Gallery */
@@ -125,7 +124,7 @@ section {
     line-height: 1.4em;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -148,8 +147,21 @@ section {
     line-height: 1.4em;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
     margin-bottom: 20px;
+}
+
+#about-hero .row span {
+    white-space: pre-wrap;
+    font-size: 16px;
+    font-family: "Phudu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 40px;
 }
 
 #about-hero .lead{
@@ -166,7 +178,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 }
 
 #about-hero .service-items ul{
@@ -188,7 +200,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 } 
 
 /* amenities */
@@ -205,7 +217,7 @@ section {
     line-height: 2.1em;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
     padding-top: 17px;
 }
 
@@ -217,7 +229,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 }
 
 /* Book */
@@ -235,7 +247,7 @@ section {
     line-height: 1.4em;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
     margin-bottom: 20px;
 }
 
@@ -253,7 +265,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 }
 
 #book-hero .service-items ul{
@@ -275,7 +287,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 } 
 
 #book-hero .book-button{
@@ -300,7 +312,7 @@ section {
     line-height: 1.4em;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
     margin-bottom: 20px;
 }
 
@@ -312,7 +324,7 @@ section {
     line-height: 2.1em;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
 }
 
 #book-1 .lead{
@@ -329,7 +341,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 }
 
 #book-1 .service-items ul{
@@ -351,7 +363,7 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 } 
 
 /* Locations */
@@ -368,7 +380,7 @@ section {
     line-height: 1.4em;
     letter-spacing: 1em;
     text-transform: uppercase;
-    color: #222;
+    color: var(--blue);
     padding-top: 17px;
 }
 
@@ -380,11 +392,13 @@ section {
     line-height: 2.4em;
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
-    color: #ababab;
+    color: var(--pale);
 }
 
 footer{
-    background-color: var(--pale);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
 }
 
 footer a{
@@ -400,3 +414,17 @@ footer h5{
 footer .last{
     background-color: var(--blue);
 }
+
+@media screen and (max-width: 848px) {
+    #location-hero .row h1{
+        font-family: brandon-grotesque;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        color: var(--blue);
+        padding-top: 17px;
+    }
+  }
