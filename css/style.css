@@ -92,6 +92,7 @@ section {
     letter-spacing: .065em;
     text-rendering: optimizeLegibility;
     color: var(--pale);
+    padding: 10px 80px;
 }
 
 #services .service-items ul{
@@ -156,6 +157,18 @@ section {
     font-size: 16px;
     font-family: "Phudu", sans-serif;
     font-weight: 700;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 40px;
+}
+
+#about-hero .row span .light {
+    font-size: 16px;
+    font-family: "Phudu", sans-serif;
+    font-weight: 400;
     font-style: normal;
     line-height: 1.4em;
     letter-spacing: .25em;
@@ -426,5 +439,17 @@ footer .last{
         letter-spacing: 0;
         color: var(--blue);
         padding-top: 17px;
+    }
+    #hero .page-description p{
+        font-family: Arial,sans-serif;
+        line-height: 1.2em;
+        font-family: Open Sans;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 38px;
+        letter-spacing: .1em;
+        /* line-height: 2.9em; */
+        text-transform: none;
+        color: var(--blue);
     }
   }
