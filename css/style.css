@@ -44,7 +44,7 @@ section {
 }
 
 #hero{
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
 
 #hero .page-description p{
@@ -67,7 +67,7 @@ section {
 #services .header h1 {
     text-align: center;
     font-size: 26px;
-    font-family: "Phudu", sans-serif;
+    font-family: brandon-grotesque;
     font-weight: 700;
     font-style: normal;
     line-height: 1.4em;
@@ -417,6 +417,7 @@ footer{
 footer a{
     text-decoration: none;
     font-family: "open sas", sans-serif;
+    font-size: 12px;
 }
 
 footer h5{
