@@ -47,6 +47,16 @@ section {
     margin-bottom: 5vw;
 }
 
+.c-items{
+    height: 720px;
+    border-radius: 40px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
+
 #hero .page-description p{
     font-family: Arial,sans-serif;
     line-height: 1.2em;
