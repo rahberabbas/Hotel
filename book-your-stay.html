@@ -78,7 +78,7 @@
                 <div class="col-lg-6 col-md-12 justify-content-start align-items-start">
                     <h1>CANCELLATIONS & REFUNDS</h1>
                     <p>For a full refund of accommodation fees, cancellation must be made a full 14 days prior to
-                        listing’s local check in time (or 3:00 PM if not specified) on the day of check in. For example,
+                        listing's local check in time (or 3:00 PM if not specified) on the day of check in. For example,
                         if check-in is on Friday 16th, cancel by Friday 2nd of that before check in time.</p>
                     <div class="col-lg-3 col-md-0"></div>
                 </div>
@@ -94,7 +94,7 @@
             </div> -->
             
             <div class="modal-body m-3">
-                <form>
+                <form method="post">
                     <div class="form-group mb-3">
                       <label for="exampleInputEmail1">First Name: </label>
                       <input type="text" class="form-control" id="fname" placeholder="John">
@@ -109,7 +109,7 @@
                       </div>
                       <div class="form-group mb-3">
                         <label for="exampleInputEmail1">Phone Number:</label>
-                        <input type="number" class="form-control" id="phone" placeholder="+22 987 654321">
+                        <input type="text" class="form-control" id="phone" placeholder="+22 987 654321">
                       </div>  
                       <div class="form-group mb-3">
                         <label for="exampleInputEmail1">Check-in:</label>
@@ -119,7 +119,7 @@
                         <label for="exampleInputEmail1">Check-out:</label>
                         <input type="date" class="form-control" id="check-out" >
                       </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" onclick="sendEmail(); reset(); return false;" id="submit" class="btn btn-primary">Submit</button>
                   </form>
             </div>
           </div>
@@ -128,120 +128,60 @@
 
       <footer class="text-center">
         <div class="continer p-4">
-            <section>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-4 md-0">
-                        <h5 class="text-uppercase">location</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#" class="text-dark text-decoration-none">116 Baker Street Marylebone,</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-dark text-decoration-none">London W1U 6TS, UK </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 md-0">
-                        <h5 class="text-uppercase">contact</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="mailto:info@ji-management.com " class="text-dark text-decoration-none">info@ji-management.com </a>
-                            </li>
-                            <!-- <li>
-                                <a href="#" class="text-dark text-decoration-none">London W1U 6TS, UK </a>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 md-0">
-                        <h5 class="text-uppercase">legal</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="/policy.html" class="text-dark">Policies</a>
-                            </li>
-                            <li>
-                                <a href="/terms-conditions.html" class="text-dark">Terms & Conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 md-0">
-                        <h5 class="text-uppercase">Follow</h5>
-                        <ul class="list-unstyled mb-0">
-                            <a href="" class="btn btn-light btn-floating mx-2"><i class="fab fa-facebook"></i></a>
-                            <a href="" class="btn btn-light btn-floating mx-2"><i class="fab fa-instagram"></i></a>
-                            <!-- <li>
-                                <a href="#" class="text-dark text-decoration-none">Suite 301, 116 Baker Street Marylebone,</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-dark text-decoration-none">London W1U 6TS, UK </a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </section>
+          <section>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 md-0">
+                <h5 class="text-uppercase">location</h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#" class="text-dark text-decoration-none">116 Baker Street Marylebone,</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-dark text-decoration-none">London W1U 6TS, UK </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 md-0">
+                <h5 class="text-uppercase">contact</h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="mailto:info@ji-management.com " class="text-dark text-decoration-none">info@ji-management.com
+                    </a>
+                  </li>
+                  <!-- <li>
+                                    <a href="#" class="text-dark text-decoration-none">London W1U 6TS, UK </a>
+                                </li> -->
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 md-0">
+                <h5 class="text-uppercase">legal</h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="/policy.html" class="text-dark">Policies</a>
+                  </li>
+                  <li>
+                    <a href="/terms-conditions.html" class="text-dark">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 md-0">
+                <h5 class="text-uppercase">Follow</h5>
+                <ul class="list-unstyled mb-0">
+                  <a href="" class="btn btn-light btn-floating mx-2"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/jiflatsrentals/" class="btn btn-light btn-floating mx-2"><i class="fab fa-instagram"></i></a>
+                  <!-- <li>
+                                    <a href="#" class="text-dark text-decoration-none">Suite 301, 116 Baker Street Marylebone,</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-dark text-decoration-none">London W1U 6TS, UK </a>
+                                </li> -->
+                </ul>
+              </div>
+              <p class="mt-5 all">Copyright © 2023, J & I Management Ltd. All Rights Reserved</p>
+            </div>
+          </section>
         </div>
-    </footer>
-
-<!-- 
-    <footer class="text-center text-white">
-        <div class="container p-4">
-            <section class="mb-4">
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-google"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-github"></i></a>
-            </section>
-            <section class="">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Location</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#" class="text-white text-decoration-none">lorem street</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white text-decoration-none">London, UK.</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Contact</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">info@infoinfo.com</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">+44 123 456 7890</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Legal</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="/policy.html" class="text-white">Policies</a>
-                            </li>
-                            <li>
-                                <a href="/terms-conditions.html" class="text-white">Terms & Conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="text-center p-3 last">
-            © 2020 Copyright:
-            <a class="text-white" href="">J&I</a>
-        </div>
-    </footer> -->
+      </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -250,6 +190,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+      <script>  
+        function sendEmail() {
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let email = document.getElementById("email").value;
+            let mobile = document.getElementById("phone").value;
+            let check_in = document.getElementById("check-in").value;
+            let check_out = document.getElementById("check-out").value;
+            let finalmessage = `First Name : ${fname} <br> Last Name : ${lname} <br>  Email : ${email} <br> Mobile : ${phone} <br>  Check In : ${check_in} <br> Check Out : ${check_out} <br>`;
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "jimessageandinfo@gmail.com",
+                Password : "A5E8C86EAAAB03365D18702BAD7FF695D860",
+                port: 2525,
+                // SecureToken: "4f166c80-af24-4c71-a3fe-a5c3a576b701",
+                To : 'info@ji-management.com',
+                From : 'jimessageandinfo@gmail.com',
+                Subject : "Mail from website",
+                Body : finalmessage
+            }).then(
+                
+              message =>alert("Message sent Successfully"),
+            );
+        }
+        </script>
 </body>
 
 </html>
